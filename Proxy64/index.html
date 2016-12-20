@@ -52,7 +52,7 @@ Utilisation de Traefik et Let's Encrypt
 					<script type="text/template">
 # Bonus
 
-Nous allons utiliser le reverse proxy Traefik. Celui-ci supporte nativement le protocole ACME qui permet la gestion des certificats SSL fournis par Let's Encrypt.
+Nous allons utiliser le reverse proxy [Traefik](https://traefik.io/). Celui-ci supporte nativement le protocole ACME qui permet la gestion des certificats SSL fournis par [Let's Encrypt](https://letsencrypt.org/).
 
 <div class="fragment">
 Nous serons donc en mesure de fournir au passage une passerelle HTTPs vers HTTP, de façon transparente et automatisée.
@@ -62,6 +62,7 @@ Nous serons donc en mesure de fournir au passage une passerelle HTTPs vers HTTP,
 				<section data-markdown data-background="bg.jpg">
 					<script type="text/template">
 # Briques techniques
+
 * un serveur Linux avec une dual stack IPv4/IPv6
 * sur lequel fonctionne le reverse proxy Traefik (hosté dans un conteneur Docker)
 * let's encrypt sera appelé par Traefik pour la gestion du certificat SSL
@@ -76,6 +77,7 @@ Nous serons donc en mesure de fournir au passage une passerelle HTTPs vers HTTP,
 
 Suivez le guide !
 
+(Fichiers de config & lignes de commande fournis sur le slide suivant)
 				</section>
 				<section data-markdown data-background="bg.jpg">
 # Références
@@ -83,7 +85,6 @@ Suivez le guide !
 * [Configuration du repository Yum](https://github.com/skattoor/IPv64/blob/master/docker.repo)
 * [Configuration de Traefik](https://github.com/skattoor/IPv64/blob/master/traefik.toml)
 * [Commandes utiles](https://github.com/skattoor/IPv64/blob/master/cmd.sh)
-
 				</section>
 			</div>
 		</div>
